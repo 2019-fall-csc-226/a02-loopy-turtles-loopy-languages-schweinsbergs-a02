@@ -52,12 +52,68 @@ kittyhead.penup()
 ######################################################################################################################
 LeftEar = turtle.Turtle()
 LeftEar.shape('arrow')
-LeftEar.color('black')
+LeftEar.color('orange')
 
 
 
+LeftEar.penup()
+LeftEar.setpos(0,150)
+LeftEar.pendown()
+LeftEar.left(90)
+LeftEar.begin_fill()
+for lear in range(2):
+    LeftEar.forward(100)
+    LeftEar.right(160)
+LeftEar.end_fill()
 
+LeftEar.left(180)
+LeftEar.forward(50)
+LeftEar.penup()
 
+#######################################################################################################################
+#Draw eyes
+#######################################################################################################################
+
+BadEye = turtle.Turtle()
+BadEye.color('black')
+BadEye.shape('circle')
+BadEye.penup()
+BadEye.setpos(20,70)
+BadEye.pendown()
+
+BadEye.hideturtle()
+
+BadEye.left(50)
+BadEye.forward(40)
+BadEye.penup()
+BadEye.setpos(40,70)
+BadEye.pendown()
+BadEye.left(90)
+BadEye.forward(40)
+
+Goodeye = turtle.Turtle()
+Goodeye.color('yellow')
+Goodeye.shape('circle')
+Goodeye.hideturtle()
+Goodeye.penup()
+Goodeye.setpos(130,70)
+Goodeye.pendown()
+Goodeye.begin_fill()
+for ge in range(4):
+    Goodeye.left(90)
+    Goodeye.forward(32)
+Goodeye.end_fill()
+
+#######################################################################################################################
+#Draw Nose
+#######################################################################################################################
+
+nose = turtle.Turtle()
+nose.color('pink')
+nose.shape('arrow')
+nose.penup()
+nose.setpos(73,48)
+nose.right(90)
 
 
 
